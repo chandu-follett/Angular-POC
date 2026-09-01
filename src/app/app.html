@@ -1,7 +1,7 @@
 <header class="site-header">
   <a class="brand" routerLink="/" aria-label="Northstar home"><span class="brand-mark">N</span><span>Northstar<span class="brand-dot">.</span></span></a>
-  <nav aria-label="Main navigation"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a><a routerLink="/about" routerLinkActive="active">About us</a><a routerLink="/services" routerLinkActive="active">Services</a><a routerLink="/contact" routerLinkActive="active">Contact</a></nav>
-  <a class="header-cta" routerLink="/contact">Start a conversation <span aria-hidden="true">↗</span></a>
+  <nav aria-label="Main navigation"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a><a routerLink="/products" routerLinkActive="active">Shop</a><a routerLink="/about" routerLinkActive="active">About us</a><a routerLink="/services" routerLinkActive="active">Services</a><a routerLink="/contact" routerLinkActive="active">Contact</a></nav>
+  <a class="cart-link" routerLink="/cart">Cart <span>{{cart.count()}}</span></a><a class="header-cta" routerLink="/contact">Start a conversation <span aria-hidden="true">↗</span></a>
 </header>
-<main><router-outlet /></main>
+<main><router-outlet /></main><app-cart-drawer />
 <footer class="site-footer"><div class="footer-top"><div><a class="brand footer-brand" routerLink="/"><span class="brand-mark">N</span><span>Northstar<span class="brand-dot">.</span></span></a><p>Thoughtful spaces for ambitious ideas.</p></div><div class="footer-links"><a routerLink="/about">About us</a><a routerLink="/services">Services</a><a routerLink="/contact">Contact</a></div><div class="social-links"><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest ↗</a></div></div><div class="footer-bottom"><span>© 2024 Northstar Studio</span><span>Made with intention in New York, London &amp; Melbourne</span></div></footer>

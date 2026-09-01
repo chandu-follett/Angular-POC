@@ -5,4 +5,18 @@
 .brand { display:inline-flex; align-items:center; gap:10px; font:700 20px 'Space Grotesk',sans-serif; letter-spacing:-.04em; } .brand-mark { display:grid; place-items:center; width:30px; height:30px; background:var(--lime); border-radius:50%; font-size:15px; } .brand-dot { color:#db633e; }
 nav { display:flex; gap:28px; margin-left:auto; font-size:13px; color:var(--muted); } nav a:hover,nav a.active { color:var(--ink); } .header-cta,.button { background:var(--ink); color:white; padding:13px 18px; font-size:12px; font-weight:700; } .header-cta span,.button span { color:var(--lime); margin-left:10px; }
 .site-footer { background:var(--teal); color:white; padding-top:68px; padding-bottom:24px; } .footer-top,.footer-bottom { max-width:var(--max); margin:auto; display:flex; justify-content:space-between; gap:30px; } .footer-top { padding-bottom:68px; } .footer-brand { color:white; } .footer-top p { color:#c2d2cc; font-size:12px; margin:18px 0 0; } .footer-links,.social-links { display:flex; flex-direction:column; gap:12px; font-size:12px; color:#dce8e2; } .footer-bottom { border-top:1px solid #467772; padding-top:18px; font:10px 'DM Mono',monospace; color:#a5c1ba; text-transform:uppercase; }
+.cart-link { font-size:12px; color:var(--muted); }
+.cart-link span { display:inline-grid; place-items:center; min-width:18px; height:18px; margin-left:5px; border-radius:50%; background:var(--lime); color:var(--ink); font-size:10px; }
+.products-section { padding:105px max(5vw,24px); }
+.products-section h2 { font:500 53px/.98 'Space Grotesk',sans-serif; letter-spacing:-.06em; margin:0; }
+.products-section h2 em { color:#db633e; font-style:normal; }
+.product-grid { max-width:var(--max); margin:60px auto 0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px; }
+.product-card { min-width:0; }
+.product-card > a { display:block; }
+.product-card img { width:100%; height:285px; object-fit:cover; display:block; }
+.product-card h3 { font:500 19px 'Space Grotesk',sans-serif; margin:18px 0 5px; }
+.product-price { color:var(--muted); font-size:13px; margin:0; }
+.product-actions { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-top:15px; font-size:11px; }
+.add-small { border:0; background:var(--ink); color:white; padding:10px 12px; cursor:pointer; font-size:11px; }
 @media (max-width:680px) { .site-header { flex-wrap:wrap; gap:20px; } nav { order:3; width:100%; justify-content:space-between; margin:0; } .header-cta { margin-left:auto; } .footer-top,.footer-bottom { flex-wrap:wrap; } }
+@media (max-width:700px) { .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 12px; margin-top:40px; } .product-card img { height:210px; } .products-section h2 { font-size:42px; } }
